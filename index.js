@@ -11,9 +11,9 @@ function reverseString(str) {
 
 // Problem 2: Count Vowels in a String
 
-const vowels = ['a', 'e', 'i', 'o', 'u'];
+// const vowels = ['a', 'e', 'i', 'o', 'u'];
 
-function countVowel(str) {
+function countVowels(str) {
   let count = 0;
 
   for (let letter of str.toLowerCase()) {
@@ -24,7 +24,7 @@ function countVowel(str) {
   return count;
 }
 
-// console.log(countVowel('programming'));
+// console.log(countVowels('programming'));
 
 // Problem 3: Check for Palindrome
 function isPalindrome(str) {
@@ -74,13 +74,13 @@ const removeArr = (arr) => {
 
 const total = (arr) => {
   let sum = 0;
-  for (let i = 0; i < arr.length; i++) {
-    sum += arr[i];
+  for (let num of arr) {
+    sum += num;
   }
 
   return sum;
 };
-// console.log(total([1, 2, 3, 4, 5, 6, 7]));
+// console.log(total([1, 2, 3]));
 
 // Problem 7: Find Even Numbers in an Array
 const isEven = (arr) => {
@@ -94,3 +94,20 @@ const isEven = (arr) => {
 };
 
 // console.log(isEven([1, 2, 3, 4, 5, 6]));
+
+// Problem 8: Capitalize First Letter of Each Word
+const capitalizeWords = (str) => {
+  const result = [];
+  const words = str.split(' ');
+
+  for (let word of words) {
+    if (word) {
+      const capital = word[0].toUpperCase() + word.slice(1);
+      result.push(capital);
+    }
+  }
+  return result.join(' ');
+};
+
+// const result = capitalizeWords('hello world');
+// console.log(result);
