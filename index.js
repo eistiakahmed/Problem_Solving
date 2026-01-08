@@ -111,3 +111,16 @@ const capitalizeWords = (str) => {
 
 // const result = capitalizeWords('hello world');
 // console.log(result);
+
+// Problem 9: Find the Factorial of a Number
+const sum = (num) => {
+  let result = 1;
+
+  for (let i = 1; i <= num; i++) {
+    result = result * i;
+  }
+  return result;
+};
+
+// const result = sum(5);
+// console.log(result);
