@@ -69,3 +69,15 @@ const removeArr = (arr) => {
 };
 
 // console.log(removeArr([1, 2, 2, 3, 4, 4]));
+
+// Problem 6: Sum of All Numbers in an Array
+
+const total = (arr) => {
+  let sum = 0;
+  for (let i = 0; i < arr.length; i++) {
+    sum += arr[i];
+  }
+
+  return sum;
+};
+// console.log(total([1, 2, 3, 4, 5, 6, 7]));
