@@ -7,13 +7,13 @@ function reverseString(str) {
   return newStr;
 }
 
-// console.log(reverseString("Hello"))
+// console.log(reverseString("Hello")) //olleH
 
 // Problem 2: Count Vowels in a String
 
-// const vowels = ['a', 'e', 'i', 'o', 'u'];
 
 function countVowels(str) {
+  let vowels = ['a', 'e', 'i', 'o', 'u'];
   let count = 0;
 
   for (let letter of str.toLowerCase()) {
@@ -24,7 +24,7 @@ function countVowels(str) {
   return count;
 }
 
-// console.log(countVowels('programming'));
+// console.log(countVowels('programming')); // 3
 
 // Problem 3: Check for Palindrome
 function isPalindrome(str) {
@@ -54,7 +54,7 @@ const maxNum = (arr) => {
   return max;
 };
 
-// console.log(maxNum([5, 1, 9, 3]));
+// console.log(maxNum([5, 1, 9, 3])); //9
 
 // Problem 5: Remove Duplicates from an Array
 
@@ -68,7 +68,7 @@ const removeArr = (arr) => {
   return newArr;
 };
 
-// console.log(removeArr([1, 2, 2, 3, 4, 4]));
+// console.log(removeArr([1, 2, 2, 3, 4, 4])); // [1,2,3,4]
 
 // Problem 6: Sum of All Numbers in an Array
 
@@ -80,7 +80,7 @@ const total = (arr) => {
 
   return sum;
 };
-// console.log(total([1, 2, 3]));
+// console.log(total([1, 2, 3])); //6
 
 // Problem 7: Find Even Numbers in an Array
 const isEven = (arr) => {
@@ -123,4 +123,23 @@ const sum = (num) => {
 };
 
 // const result = sum(5);
+// console.log(result);
+
+// Problem 10: PingPong Challenge
+const pingPong = () => {
+  const result = [];
+  for (let i = 1; i <= 20; i++) {
+    if (i % 3 === 0 && i % 5 === 0) {
+      result.push('PingPong');
+    } else if (i % 3 === 0) {
+      result.push('Ping');
+    } else if (i % 5 === 0) {
+      result.push('Pong');
+    } else {
+      result.push(i);
+    }
+  }
+  return result;
+};
+// const result = pingPong();
 // console.log(result);
