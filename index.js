@@ -81,3 +81,16 @@ const total = (arr) => {
   return sum;
 };
 // console.log(total([1, 2, 3, 4, 5, 6, 7]));
+
+// Problem 7: Find Even Numbers in an Array
+const isEven = (arr) => {
+  const num = [];
+  for (let i = 0; i < arr.length; i++) {
+    if (arr[i] % 2 === 0) {
+      num.push(arr[i]);
+    }
+  }
+  return num;
+};
+
+// console.log(isEven([1, 2, 3, 4, 5, 6]));
